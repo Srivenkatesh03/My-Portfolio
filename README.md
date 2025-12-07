@@ -17,11 +17,11 @@ Welcome to My-Portfolio — my personal website showcasing my skills, projects, 
 
 | Purpose | Technology / Tool |
 |--------|------------------|
-| Markup / Styles / Layout | HTML, CSS, (optional: SCSS / Sass) |
+| Markup / Styles / Layout | HTML, CSS |
 | Interactivity / Dynamics | JavaScript (or a framework/library if used) |
 | Deployment | GitHub Pages |
-| CI / CD / Automation | GitHub Actions (optional) |
-| Custom Domain & HTTPS | Custom domain (e.g. `.xyz`) + GitHub Pages auto SSL |
+| CI / CD / Automation | GitHub Actions  |
+| Custom Domain & HTTPS | Custom domain  + GitHub Pages auto SSL |
 
 ## 🔧 Setup & Run Locally  
 
