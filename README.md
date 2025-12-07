@@ -1,111 +1,80 @@
-# 🚀 DevOps CI/CD Pipeline – Portfolio Deployment (AWS)
+# My-Portfolio
 
-This project demonstrates a fully automated CI/CD pipeline using:
+Welcome to My-Portfolio — my personal website showcasing my skills, projects, resume and contact info. Hosted on **GitHub Pages** and built with modern web technologies for a clean, responsive, and professional look.  
 
-- GitHub Actions
-- Docker & DockerHub
-- Ansible
-- AWS EC2 (Ubuntu)
-- Nginx
+## 🚀 Live Demo  
+[🔗 Visit the live site](https://srivenkatesh49175.xyz)  
 
-Every time code is pushed to the `AWS-EC2` branch, the pipeline runs:
+## 📄 What’s Inside  
+- **Home** — Hero section with your name, tagline and introduction.  
+- **About** — Summary of skills, education, interests, and background.  
+- **Projects** — List of your major personal or professional projects, each with description, technologies used, and link / demo / repo.  
+- **Resume / CV** — Downloadable or linked résumé for recruiters / clients.  
+- **Contact** — Email, social links, or a contact form so visitors can reach out.  
+- **Blog / Posts** (optional) — Share insights, tutorials, or write-ups.  
 
-✔ Build → Test → Docker → Deploy → Verify
+## 🧰 Tech Stack  
 
----
+| Purpose | Technology / Tool |
+|--------|------------------|
+| Markup / Styles / Layout | HTML, CSS, (optional: SCSS / Sass) |
+| Interactivity / Dynamics | JavaScript (or a framework/library if used) |
+| Deployment | GitHub Pages |
+| CI / CD / Automation | GitHub Actions (optional) |
+| Custom Domain & HTTPS | Custom domain (e.g. `.xyz`) + GitHub Pages auto SSL |
 
-## 📐 Architecture Overview
-
-        Developer Push Code ──▶ GitHub Repository (AWS-EC2 Branch)
-                                └▶ GitHub Actions CI/CD Pipeline
-                                        ├─ Build & Test Application
-                                        ├─ Build Docker Image
-                                        ├─ Push Image to DockerHub
-                                        └─ Ansible Remote Deploy
-                                        └─ AWS EC2 Server
-                                        └─ Application Served Live
----
-
-## 🛠️ Technologies Used
-
-| Component          | Technology |
-|-------------------|------------|
-| CI/CD             | GitHub Actions |
-| Containerization  | Docker |
-| Registry          | DockerHub |
-| Provisioning      | Ansible |
-| Cloud             | AWS EC2 |
-| OS                | Ubuntu |
-| Web Server        | Nginx |
-| Version Control   | Git / GitHub |
-
----
-
-## 🔄 CI/CD Workflow
-
-Pipeline runs when pushing to:
-
-AWS-EC2 branch
-
-### Stages
-
-1️⃣ **Build & Test**
-- Install dependencies
-- Run linter
-- Build frontend
-
-2️⃣ **Docker Build**
-- Build image
-- Tag with `SHA` & `latest`
-- Push to DockerHub
-
-3️⃣ **Deploy to AWS**
-- SSH into EC2 using Ansible
-- Pull latest Docker image
-- Restart container
-- Verify deployment
-
----
-
-## 🌐 Live Deployment
-
-👉 Running on your EC2 server:
-
-http://3.108.65.218/
-
-
----
-
-## 📦 Docker Image
-
-Pull the latest image:
+## 🔧 Setup & Run Locally  
 
 ```bash
-docker pull srivenkatesh03/my-portfolio:latest
+# Clone the repo
+git clone https://github.com/YourUsername/My-Portfolio.git
+cd My-Portfolio
+
+# (optional) If you use a build step (e.g. webpack / parcel / bundler):
+# npm install
+# npm run build
 ```
-🔐 GitHub Secrets Used
-Secret Name	        Description
+# Open index.html in browser to preview locally
 
-DOCKERHUB_USERNAME	        DockerHub Account
+💡 For live reload during development, use any static-server — e.g. npx live-server .
 
-DOCKERHUB_TOKEN        	DockerHub Access Token
+✅ Deployment
 
-EC2_HOST	        EC2 Public DNS
+Push changes to main branch — GitHub Pages will auto-deploy on changes.
 
-EC2_USER	        ubuntu
+If using a custom domain: add your domain in “Settings → Pages → Custom domain”.
 
-EC2_SSH_PRIVATE_KEY	        Private key for SSH
+Ensure DNS records are set correctly (A records for root / CNAME for www).
 
+GitHub will provision a free SSL certificate — enable Enforce HTTPS in Pages settings.
 
+📁 Project Structure
 
+```
+My-Portfolio/
+│
+├── index.html         # Home / main entry
+├── about.html         # About / resume / skills page
+├── projects.html      # Projects listing
+├── contact.html       # Contact / form / social links
+├── assets/            # CSS, JS, images, icons
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── README.md          # This file
+└── …others as needed 
+```
 
-<img width="1888" height="895" alt="image" src="https://github.com/user-attachments/assets/30427a74-1fdf-41c9-ad3e-6244f5333271" />
-                                                  CI/CD pipeline run on GitHub Actions
-                                                  
-<img width="1905" height="907" alt="image" src="https://github.com/user-attachments/assets/4ac35ed5-c994-4093-bbd3-466405ff68a6" />
-                                                      Ansible deployment on EC
-<img width="1906" height="708" alt="image" src="https://github.com/user-attachments/assets/acc61bdd-09b0-4e52-9b41-f36ee3d40afd" />
-                                                      Application running on EC2
+✏️ How to Customize
+
+Change texts, images, links to reflect your information.
+
+Add new sections/pages if needed (e.g. blog, testimonials).
+
+Modify styles to match your personality / brand.
+
+Add a favicon and metadata (title, description, social sharing tags).
+
 <img width="1918" height="975" alt="image" src="https://github.com/user-attachments/assets/d41556d9-40be-4bd7-8f6d-15f1debb40ed" />
 
 
