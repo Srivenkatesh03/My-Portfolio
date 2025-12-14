@@ -3,41 +3,41 @@ import React from 'react';
 
 const Skills = () => {
   const skillCategories = [
-    {
-      title: 'Frontend',
-      skills: [
-        { name: 'React/Next.js', level: 50 },
-        { name: 'TypeScript', level: 50 },
-        { name: 'Tailwind CSS', level: 50 },
-      ]
-    },
-    {
-      title: 'Backend',
-      skills: [
-        { name: 'Node.js', level: 55 },
-        { name: 'Python', level: 70 },
-        { name: 'PostgreSQL', level: 50 },
-        { name: 'MongoDB', level: 58 }
-      ]
-    },
-    {
-      title: 'Graphic Designer',
-      skills: [
-        { name: 'Adobe Photoshop', level: 75 },
-          { name: 'Illustrator', level: 75 },
-        { name: 'Figma, Adobe XD, Canva', level: 70 },
-      ]
-    },
-    {
-      title: 'DevOps/Tools',
-      skills: [
-        { name: 'AWS', level: 50 },
-        { name: 'Docker', level: 50 },
-        { name: 'Git/GitHub', level: 50 },
-        { name: 'CI/CD', level: 55 }
-      ]
-    }
-  ];
+  {
+    title: 'Backend (Python)',
+    skills: [
+      { name: 'Python', level: 70 },
+      { name: 'Django', level: 65 },
+      { name: 'REST APIs', level: 65 }
+    ]
+  },
+  {
+    title: 'DevOps & Cloud',
+    skills: [
+      { name: 'AWS (EC2, ECR, ECS)', level: 55 },
+      { name: 'Docker & Docker Compose', level: 60 },
+      { name: 'CI/CD (Jenkins)', level: 55 },
+      { name: 'Terraform', level: 50 }
+    ]
+  },
+  {
+    title: 'Frontend',
+    skills: [
+      { name: 'HTML', level: 55 },
+      { name: 'CSS', level: 50 },
+      { name: 'JavaScript', level: 55 }
+    ]
+  },
+  {
+    title: 'Databases & Tools',
+    skills: [
+      { name: 'PostgreSQL', level: 55 },
+      { name: 'MySQL', level: 50 },
+      { name: 'Git & GitHub', level: 60 },
+      { name: 'Linux', level: 55 }
+    ]
+  }
+];
 
   return (
     <section id="skills" className="py-20 bg-gray-50">
