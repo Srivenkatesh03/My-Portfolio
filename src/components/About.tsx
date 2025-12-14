@@ -53,16 +53,8 @@ const About = () => {
                   I am a Python Full-Stack Developer with a strong focus on backend development using Django and practical experience in DevOps practices. I specialize in building scalable, maintainable web applications while ensuring efficient deployment, automation, and system reliability. My approach combines clean backend architecture, well-structured APIs, and streamlined delivery pipelines to support modern, production-ready applications.
                 </p>
                 
-                <p className="mb-6" style={{ textAlign: 'justify' }}>
-                  As a Full-Stack developer, I work across the backend and frontend layers, developing robust Django applications, RESTful APIs, and database-driven systems. I have hands-on experience with Python, Django, SQL-based databases, and frontend technologies, enabling me to deliver end-to-end solutions that are secure, performant, and easy to maintain.
-                </p>
-
                 <p style={{ textAlign: 'justify' }}>
                   In DevOps, I focus on automating development workflows and infrastructure to improve speed and reliability. I have experience with CI/CD pipelines, containerization, and infrastructure automation using tools such as Docker, Jenkins, Git, and cloud services on AWS. I emphasize best practices in version control, deployment automation, and environment consistency to reduce downtime and deployment risk.
-                </p>
-                <br />
-                <p style={{textAlign: 'justify'}}>
-                  In addition to my technical expertise, I bring a background in design that enhances my ability to build user-friendly interfaces and collaborate effectively with design-focused teams. My experience with UI/UX tools and visual design principles allows me to bridge the gap between functionality and usability, contributing to products that are both technically sound and visually coherent.
                 </p>
 
               </div>
