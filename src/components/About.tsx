@@ -1,19 +1,40 @@
 
 import React from 'react';
-import { Infinity, Palette, Code, Globe } from 'lucide-react';
+import { Infinity, Code, Globe, Server, Database } from 'lucide-react';
+
 
 const About = () => {
   const interests = [
-    { icon: Infinity, title: 'DevOps', description: 'Automation' },
-    { icon: Palette, title: 'Graphic Designer', description: 'Creative' },
-    { icon: Code, title: 'Web Developer', description: 'Amazing Applications' },
-    { icon: Globe, title: 'Cloud Computing', description: 'Scalable infrastructure' }
-  ];
+  { icon: Infinity, title: 'DevOps', description: 'Automation & Reliability' },
+  { icon: Server, title: 'Backend Development', description: 'Django • REST APIs' },
+  { icon: Code, title: 'Web Developer', description: 'Full-Stack Applications' },
+  { icon: Globe, title: 'Cloud Computing', description: 'Scalable Infrastructure' },
+  { icon: Database, title: 'Database Systems', description: 'SQL • Data Modeling' }
+];
 
   const techStack = [
-    'JavaScript', 'TypeScript', 'React', 'Node.js', 'Python', 'Java',
-    'PostgreSQL', 'MongoDB', 'AWS', 'Docker', 'Git', 'TensorFlow','Photoshop','Adobe Illustrator', 'Figma', 'Canva','Adobe XD'
-  ];
+  // Programming & Web
+  'JavaScript', 'Python',
+  'HTML5', 'CSS3', 'Django',
+
+  // DevOps & Cloud
+  'AWS', 'EC2', 'ECR', 'ECS',
+  'Docker', 'Docker Compose',
+  'Jenkins', 'CI/CD',
+  'Terraform', 'Linux',
+
+  // Databases
+  'SQL', 'MySQL', 'PostgreSQL',
+
+  // AI / ML
+  'TensorFlow', 'OpenCV',
+
+  // Tools & Design
+  'Git', 'GitHub', 'Postman',
+  'Figma', 'Canva',
+  'Photoshop', 'Adobe Illustrator', 'Adobe XD'
+];
+
 
   return (
     <section id="about" className="py-20 bg-white">
@@ -24,21 +45,26 @@ const About = () => {
             <p className="text-xl text-gray-600">Get to know me better</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Bio Section */}
             <div>
               <div className="prose prose-lg text-gray-700">
                 <p className="mb-6" style={{ textAlign: 'justify' }}>
-                  I am a multidisciplinary professional with a strong foundation in both technology and design. With a passion for solving problems creatively and efficiently, I have developed a unique skill set that combines system automation and visual storytelling. This dual expertise allows me to contribute to both the technical and creative aspects of a project, making me adaptable across diverse teams and workflows.
+                  I am a Python Full-Stack Developer with a strong focus on backend development using Django and practical experience in DevOps practices. I specialize in building scalable, maintainable web applications while ensuring efficient deployment, automation, and system reliability. My approach combines clean backend architecture, well-structured APIs, and streamlined delivery pipelines to support modern, production-ready applications.
                 </p>
                 
                 <p className="mb-6" style={{ textAlign: 'justify' }}>
-                  In the field of DevOps, I focus on streamlining development lifecycles through automation, continuous integration/deployment (CI/CD), and infrastructure as code. I have hands-on experience with tools like Docker, Kubernetes, Jenkins, Git, and various cloud platforms such as AWS and Azure. My approach emphasizes reliability, scalability, and speed — ensuring that systems run smoothly, securely, and with minimal downtime.
+                  As a Full-Stack developer, I work across the backend and frontend layers, developing robust Django applications, RESTful APIs, and database-driven systems. I have hands-on experience with Python, Django, SQL-based databases, and frontend technologies, enabling me to deliver end-to-end solutions that are secure, performant, and easy to maintain.
                 </p>
 
                 <p style={{ textAlign: 'justify' }}>
-                  As a Graphic Designer, I specialize in creating clean, engaging visuals that communicate ideas clearly and effectively. I am skilled in tools such as Adobe Creative Suite, Figma, and Canva, with experience in branding, UI/UX design, and digital media. My design work is guided by a strong sense of layout, color theory, and user experience, allowing me to create designs that are both functional and visually appealing.
+                  In DevOps, I focus on automating development workflows and infrastructure to improve speed and reliability. I have experience with CI/CD pipelines, containerization, and infrastructure automation using tools such as Docker, Jenkins, Git, and cloud services on AWS. I emphasize best practices in version control, deployment automation, and environment consistency to reduce downtime and deployment risk.
                 </p>
+                <br />
+                <p style={{textAlign: 'justify'}}>
+                  In addition to my technical expertise, I bring a background in design that enhances my ability to build user-friendly interfaces and collaborate effectively with design-focused teams. My experience with UI/UX tools and visual design principles allows me to bridge the gap between functionality and usability, contributing to products that are both technically sound and visually coherent.
+                </p>
+
               </div>
 
               {/* Tech Stack */}
@@ -58,7 +84,7 @@ const About = () => {
             </div>
 
             {/* Interests Grid */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-4">
               {interests.map((interest, index) => (
                 <div
                   key={index}
