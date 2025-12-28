@@ -71,7 +71,36 @@ const Projects = () => {
         'Security group configuration',
         'Infrastructure version control'
       ]
-    }
+    },
+    {
+  id: 4,
+  title: 'Student Management System (Django)',
+  shortDescription: 'A web-based application for managing student records, attendance, and academic performance',
+  fullDescription: 'The Student Management System is a Django-based web application designed to manage student information, academic records, and attendance efficiently. It provides role-based access control, secure authentication, and an intuitive interface for administrators to add, update, and monitor student data. The system supports subject-wise marks, automated result calculation, attendance percentage tracking, and data export features for reporting and analysis.',
+  image: '/django-pro.png',
+  techStack: [
+    'Python',
+    'Django',
+    'HTML',
+    'CSS',
+    'Bootstrap',
+    'SQLite',
+    'JavaScript'
+  ],
+  githubUrl: 'https://github.com/Srivenkatesh03/Student_Management_System.git',
+  features: [
+    'Secure authentication with login and logout functionality',
+    'CRUD operations for student records with image upload support',
+    'Department and year-based student classification',
+    'Subject-wise marks management with automatic total and percentage calculation',
+    'Attendance tracking with percentage computation',
+    'Search and pagination for efficient student listing',
+    'Role-based access control for administrative actions',
+    'CSV export of student details and academic records'
+  ]
+}
+
+    
   ];
 
   const selectedProjectData = codeProjects.find(p => p.id === selectedProject);
